@@ -20,6 +20,7 @@ ensure that message ends in a newline.
 - With-cp does not consider source/resource paths
 - Evaluation of boot script is now done via string concatenation and `load-string`, rather than `read-string` [#571][571]
 - Improve robustness of built-in `notify` task [#551](https://github.com/boot-clj/boot/pull/551)
+- When directories or files cannot be opened by boot, don't fail but log something in debug level [#598][598] & [#629][629]
 
 ##### Tasks
 
@@ -41,6 +42,8 @@ ensure that message ends in a newline.
 [567]: https://github.com/boot-clj/boot/pull/567
 [581]: https://github.com/boot-clj/boot/pull/581
 [611]: https://github.com/boot-clj/boot/pull/611
+[598]: https://github.com/boot-clj/boot/pull/598
+[629]: https://github.com/boot-clj/boot/pull/629
 
 ## 2.7.1
 
